@@ -1,16 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Star from "../../assets/star.png";
 import "./MovieCard.css";
 
 const MovieCard = ({movie}) => {
   return (
+    <div class="row  movie_card col-md-12">
    
-    <a href={`https://www.themoviedb.org/movie/${movie.id}`} target="_blank" className='movie_card'>
+    <Link to={`/movie/${movie.id}`} >
 
      <img
   src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
   alt='movie_poster'
-  className='movie_poster'
+  className='movie_poster img-responsive'
 />
      
      <div className='movie_details'>
@@ -26,7 +28,8 @@ const MovieCard = ({movie}) => {
 
      </div>
      
-     </a>
+     </Link>
+     </div>
 
   )
 }

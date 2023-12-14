@@ -61,3 +61,47 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+@media only screen and (max-width: 600px) {
+
+    .movie_list_heading {
+        display: block;
+        width: 100%;
+        align-items: center;
+        font-size:15px;
+        color: #fff;
+        color: var(--heading_color);
+    }
+    .movie_filter_item {
+        padding: 5px 5px;
+        cursor: pointer;
+        margin-right: 5px;
+        font-size: 10px;
+    }
+
+    .movie_list_header {
+        padding: 10px 10px;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+    }
+    .movie_list_fs {
+    padding: 0px 0px; 
+        cursor: pointer;
+        display: flex;
+    }
+
+    .movie_sorting{
+        border:none;
+        outline: none;
+        border-radius: 5px;
+        font-size: 10px;
+        font-weight: 500;
+        font-family: inherit;
+        height: 15px;
+        padding:0 5px;
+        margin: 0 5px; 
+    
+    }
+}

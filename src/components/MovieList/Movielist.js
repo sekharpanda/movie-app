@@ -17,7 +17,7 @@ const MovieList = ({type,title,emoji}) => {
     })
     useEffect(() => {
         fetchMovies();
-    }, []);
+    }, [type]);
 
     useEffect(()=>{
         if(sort.by!=="default"){
@@ -63,7 +63,9 @@ const MovieList = ({type,title,emoji}) => {
    
       
   return (
-    <section className="movie_list" id={type}>
+  
+    <div className="row ">
+    <div className="movie_list col-md-12 col-sm-12 col-xs-12" id={type}>
         <header className='movie_list_header'>
             <h2 className='movie_list_heading'>{title}
             <img src={emoji} alt = "${emoji} "/>
@@ -90,14 +92,16 @@ const MovieList = ({type,title,emoji}) => {
             </div>
         </header>
 
-        <div className="movie_cards">
+        <div className="movie_cards col-md-12">
             {
            filterMovies.map(movie =>< MovieCard key={movie.id} movie={movie}/>)
         }
 
         </div>
 
-    </section>
+    </div>
+     </div>
+ 
   )
 }
 

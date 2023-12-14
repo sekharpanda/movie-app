@@ -4,9 +4,9 @@
 }
 
 :root{
-  --body_backgorund:#101010;
-  --body_color:#fff;
-  --heading_color:#ffe400;
+  --body_backgorund:#101010!important;
+  --body_color:#fff!important;
+  --heading_color:#ffe400!important;
 }
 
 [data-theme="light"]{
@@ -26,9 +26,9 @@ html{
 }
 
 body{
-  background-color: var(--body_backgorund);
-  color: var(--body_color);
-  font-family: "Monteserrat" , sans-serif;
+  background-color: var(--body_backgorund)!important;
+  color: var(--body_color)!important;
+  font-family: "Monteserrat" , sans-serif!important;
 }
 .align_cenetr{
 display: flex;
